@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com PHP</title>
+
+    <style>
+        form, input, fieldset {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form method="get" action="form.php">
+        <h2>Formulário de Cadastro</h2>
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+        </div>
+
+        <div>
+            <label for="nascimento">Ano de Nascimento:</label>
+            <input type="number" name="nascimento">
+        </div>
+
+        <div>
+            <fieldset>
+                <label for="genero">Genêro:</label>
+                <input type="radio" name="genero" value="masculino">
+                <label for="masculino">masculino</label>
+                <input type="radio" name="genero" value="feminino">
+                <label for="feminino">feminino</label>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+
+</html>

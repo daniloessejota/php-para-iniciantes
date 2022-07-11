@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch com Múltiplos Casos</title>
+
+    <style>
+        .space {
+            margin-bottom: 20px;
+        }
+
+        .size {
+            width: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <form method="get" action="multiplos-casos.php">
+
+        <fieldset class="space size">
+            <legend>Escolha o dia da semana:</legend>
+
+            <label for="day">Dia da Semana: </label>
+  
+            <select name="weekday" id="wekday">
+                <option value="0" selected>SELECIONAR</option>
+                <option value="7">DOMINGO</option>
+                <option value="1">SEGUNDA-FEIRA</option>
+                <option value="2">TERÇA-FEIRA</option>
+                <option value="3">QUARTA-FEIRA</option>
+                <option value="4">QUINTA-FEIRA</option>
+                <option value="5">SEXTA-FEIRA</option>
+                <option value="6">SÁBADO</option>
+            </select>
+        
+        </fieldset>
+
+    </div>
+
+    <div>
+        <input type="submit" value="VAI TER AULA?">
+    </div>
+
+    </form>
+</body>
+
+</html>

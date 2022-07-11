@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Switch - Calculadora</title>
+
+    <style>
+        .space {
+            margin-bottom: 20px;
+        }
+
+        .size {
+            width: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <form method="get" action="calcular.php">
+
+        <div class="space">
+            <label for="number">
+                Digite um número:
+            </label>
+            <input type="number" name="number" required>
+        </div>
+
+        <fieldset class="space size">
+            <legend>O que voce quer calcular?</legend>
+
+            <input type="radio" name="calculo" id="dobro" checked value="1" required>
+            <label for="dobro">Dobro</label>
+
+            <input type="radio" name="calculo" id="cubo" value="2">
+            <label for="cubo">Cubo</label>
+
+            <input type="radio" name="calculo" id="raiz" value="3">
+            <label for="raiz">Raiz Quadrada</label>
+        
+        </fieldset>
+
+    </div>
+
+    <div>
+        <input type="submit" value="CALCULAR">
+    </div>
+
+    </form>
+</body>
+
+</html>

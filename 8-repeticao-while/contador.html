@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Personalizável</title>
+
+    <style>
+        .space {
+            margin-bottom: 20px;
+        }
+
+        .size {
+            width: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <form method="get" action="contador.php">
+
+        <div class="space">
+            <label for="number">
+                Ínicio:
+            </label>
+            <input type="number" name="start" required>
+        </div>
+
+        <div class="space">
+            <label for="number">
+                Final:
+            </label>
+            <input type="number" name="end" required>
+        </div>
+
+        <div class="space">
+            <label for="number">
+                Intervalo:
+            </label>
+            <input type="number" name="space" required>
+        </div>
+
+    </div>
+
+    <div>
+        <input type="submit" value="CONTAR">
+    </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉDIA DOS ALUNOS</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        label {
+            font-weight: 400;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h2>MÉDIA DOS ALUNOS</h2>
+
+        <form method="get" action="1-exercicio-notas.php">
+
+            <div>
+                <label for="">NOTA 1º SEMESTRE: </label>
+                <input type="number" name="notaUm" id="notaUm" step="0.5" min="0" max="10" placeholder="N1">
+            </div>
+
+            <div>
+                <label for="">NOTA 2º SEMESTRE: </label>
+                <input type="number" name="notaDois" id="notaDois" step="0.5" min="0" max="10" placeholder="N2">
+            </div>
+
+            <input class="btn-primary" type="submit" value="ENVIAR">
+
+        </form>
+    </div>
+</body>
+
+</html>

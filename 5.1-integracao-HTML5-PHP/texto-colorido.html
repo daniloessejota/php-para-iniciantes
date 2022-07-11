@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Colorido</title>
+
+    <style>
+        body, form, input, fieldset {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Gerador de Textos Coloridos</h2>
+
+    <div>
+        <form method="get" action="textcolor.php">
+
+            <div>
+                <label for="text">Seu texto aqui:</label>
+                <textarea name="texto" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="tamanho">Tamanho do Texto:</label>
+                <select name="tamanho" id="t">
+                    <option value="1em">Normal</option>
+                    <option value="2em">Médio</option>
+                    <option value="4em">Grande</option>
+                    <option value="5em">Extra Grande</option>
+                </select>
+
+                <label for="cor">Escolha a Cor:</label>
+                <input type="color" name="cor" id="color">
+
+                <input type="submit" value="GERAR">
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
